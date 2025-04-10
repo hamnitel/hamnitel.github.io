@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色中英文参考对照表 (300+种颜色)</title>
+	<script src="disable-f12.js"></script>
+    <style>
+        body {
+	font-family: 'Microsoft YaHei', Arial, sans-serif;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	padding: 64px;
+	background-color: #E8E8E8;
+	color: #333;
+	align-content: center;
+        }
+		logo{
+			text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+		}
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+		.copyright {
+			text-align: center;
+            color: #444;
+            margin-top: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1.0em;
+        }
+		.logo{
+			text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+		}
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .color-card {
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.10);
+            text-align: center;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .color-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.14);
+        }
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .color-value {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+        .color-section {
+            margin-bottom: 40px;
+            background: #F0F0F0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .dark-text {
+            color: #333;
+        }
+        .light-text {
+            color: white;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        }
+        .copy-notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .show-notification {
+            opacity: 1;
+        }
+        @media (max-width: 768px) {
+            .color-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+.image-container {
+  position: relative;
+  display: inline-block;
+	text-align: center;
+}
+
+.image-container img {
+  display: block;
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  gap: 8px; /* 图片和文本之间的间距 */
+}
+
+.tooltip img {
+  max-width: 160px; /* 设置图片最大宽度 */
+  max-height: 180px; /* 设置图片最大高度 */
+  display: block; /* 移除图片底部的额外间距 */
+}
+
+.image-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -5px);
+}
+    </style>
+</head>
+<body>
+        <div class="copy-notification" id="copyNotification">已复制HEX值!</div>
+    <div class="logo"><img src="lgog2.png" width="125" height="116" alt=""/></div>
+<h1>颜色中英文参考对照表 (300+种颜色)</h1>
+     <!-- 特殊色系 (30种) -->
+<div class="color-section">
+    <h2>特殊色系 (30种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #00FFFF;">
+            <div class="color-name dark-text">青色</div>
+            <div class="color-value dark-text">Cyan #00FFFF</div>
+        </div>
+        <div class="color-card" style="background-color: #FF00FF;">
+            <div class="color-name light-text">洋红色</div>
+            <div class="color-value light-text">Magenta #FF00FF</div>
+        </div>
+        <div class="color-card" style="background-color: #7FFFD4;">
+            <div class="color-name dark-text">碧绿色</div>
+            <div class="color-value dark-text">Aquamarine #7FFFD4</div>
+        </div>
+        <div class="color-card" style="background-color: #00FF7F;">
+            <div class="color-name dark-text">春绿色</div>
+            <div class="color-value dark-text">SpringGreen #00FF7F</div>
+        </div>
+        <div class="color-card" style="background-color: #D2B48C;">
+            <div class="color-name dark-text">棕褐色</div>
+            <div class="color-value dark-text">Tan #D2B48C</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6347;">
+            <div class="color-name light-text">番茄色</div>
+            <div class="color-value light-text">Tomato #FF6347</div>
+        </div>
+        <div class="color-card" style="background-color: #40E0D0;">
+            <div class="color-name dark-text">绿松石</div>
+            <div class="color-value dark-text">Turquoise #40E0D0</div>
+        </div>
+        <div class="color-card" style="background-color: #EE82EE;">
+            <div class="color-name dark-text">紫红色</div>
+            <div class="color-value dark-text">Violet #EE82EE</div>
+        </div>
+        <div class="color-card" style="background-color: #F5DEB3;">
+            <div class="color-name dark-text">小麦色</div>
+            <div class="color-value dark-text">Wheat #F5DEB3</div>
+        </div>
+        <div class="color-card" style="background-color: #9ACD32;">
+            <div class="color-name dark-text">黄绿色</div>
+            <div class="color-value dark-text">YellowGreen #9ACD32</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD700;">
+            <div class="color-name dark-text">金色</div>
+            <div class="color-value dark-text">Gold #FFD700</div>
+        </div>
+        <div class="color-card" style="background-color: #C0C0C0;">
+            <div class="color-name dark-text">银色</div>
+            <div class="color-value dark-text">Silver #C0C0C0</div>
+        </div>
+        <div class="color-card" style="background-color: #B8860B;">
+            <div class="color-name light-text">暗金色</div>
+            <div class="color-value light-text">DarkGoldenrod #B8860B</div>
+        </div>
+        <div class="color-card" style="background-color: #006400;">
+            <div class="color-name light-text">深绿色</div>
+            <div class="color-value light-text">DarkGreen #006400</div>
+        </div>
+        <div class="color-card" style="background-color: #BDB76B;">
+            <div class="color-name dark-text">暗卡其色</div>
+            <div class="color-value dark-text">DarkKhaki #BDB76B</div>
+        </div>
+        <div class="color-card" style="background-color: #8B008B;">
+            <div class="color-name light-text">暗洋红色</div>
+            <div class="color-value light-text">DarkMagenta #8B008B</div>
+        </div>
+        <div class="color-card" style="background-color: #556B2F;">
+            <div class="color-name light-text">暗橄榄绿色</div>
+            <div class="color-value light-text">DarkOliveGreen #556B2F</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8C00;">
+            <div class="color-name dark-text">暗橙色</div>
+            <div class="color-value dark-text">DarkOrange #FF8C00</div>
+        </div>
+        <div class="color-card" style="background-color: #9932CC;">
+            <div class="color-name light-text">暗兰花紫</div>
+            <div class="color-value light-text">DarkOrchid #9932CC</div>
+        </div>
+        <div class="color-card" style="background-color: #8B0000;">
+            <div class="color-name light-text">暗红色</div>
+            <div class="color-value light-text">DarkRed #8B0000</div>
+        </div>
+        <div class="color-card" style="background-color: #E9967A;">
+            <div class="color-name dark-text">暗鲑红色</div>
+            <div class="color-value dark-text">DarkSalmon #E9967A</div>
+        </div>
+        <div class="color-card" style="background-color: #8FBC8F;">
+            <div class="color-name dark-text">暗海绿色</div>
+            <div class="color-value dark-text">DarkSeaGreen #8FBC8F</div>
+        </div>
+        <div class="color-card" style="background-color: #483D8B;">
+            <div class="color-name light-text">暗板岩蓝</div>
+            <div class="color-value light-text">DarkSlateBlue #483D8B</div>
+        </div>
+        <div class="color-card" style="background-color: #2F4F4F;">
+            <div class="color-name light-text">暗石板灰</div>
+            <div class="color-value light-text">DarkSlateGray #2F4F4F</div>
+        </div>
+        <div class="color-card" style="background-color: #00CED1;">
+            <div class="color-name dark-text">暗绿松石</div>
+            <div class="color-value dark-text">DarkTurquoise #00CED1</div>
+        </div>
+        <div class="color-card" style="background-color: #9400D3;">
+            <div class="color-name light-text">暗紫罗兰</div>
+            <div class="color-value light-text">DarkViolet #9400D3</div>
+        </div>
+        <div class="color-card" style="background-color: #FF1493;">
+            <div class="color-name light-text">深粉色</div>
+            <div class="color-value light-text">DeepPink #FF1493</div>
+        </div>
+        <div class="color-card" style="background-color: #00BFFF;">
+            <div class="color-name dark-text">深天蓝色</div>
+            <div class="color-value dark-text">DeepSkyBlue #00BFFF</div>
+        </div>
+        <div class="color-card" style="background-color: #696969;">
+            <div class="color-name light-text">暗灰色</div>
+            <div class="color-value light-text">DimGray #696969</div>
+        </div>
+        <div class="color-card" style="background-color: #1E90FF;">
+            <div class="color-name light-text">道奇蓝</div>
+            <div class="color-value light-text">DodgerBlue #1E90FF</div>
+        </div>
+    </div>
+</div>
+    <!-- 红色系 -->
+    <div class="color-section">
+    <h2>红色系 (30种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #FF0000;">
+            <div class="color-name light-text">红色</div>
+            <div class="color-value light-text">Red #FF0000</div>
+        </div>
+        <div class="color-card" style="background-color: #DC143C;">
+            <div class="color-name light-text">深红色</div>
+            <div class="color-value light-text">Crimson #DC143C</div>
+        </div>
+        <div class="color-card" style="background-color: #B22222;">
+            <div class="color-name light-text">耐火砖红</div>
+            <div class="color-value light-text">FireBrick #B22222</div>
+        </div>
+        <div class="color-card" style="background-color: #8B0000;">
+            <div class="color-name light-text">暗红色</div>
+            <div class="color-value light-text">DarkRed #8B0000</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6347;">
+            <div class="color-name light-text">番茄红</div>
+            <div class="color-value light-text">Tomato #FF6347</div>
+        </div>
+        <div class="color-card" style="background-color: #FF4500;">
+            <div class="color-name light-text">橙红色</div>
+            <div class="color-value light-text">OrangeRed #FF4500</div>
+        </div>
+        <div class="color-card" style="background-color: #CD5C5C;">
+            <div class="color-name light-text">印度红</div>
+            <div class="color-value light-text">IndianRed #CD5C5C</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6B6B;">
+            <div class="color-name light-text">珊瑚红</div>
+            <div class="color-value light-text">LightCoral #FF6B6B</div>
+        </div>
+        <div class="color-card" style="background-color: #E9967A;">
+            <div class="color-name dark-text">暗鲑红</div>
+            <div class="color-value dark-text">DarkSalmon #E9967A</div>
+        </div>
+        <div class="color-card" style="background-color: #FA8072;">
+            <div class="color-name light-text">鲑红</div>
+            <div class="color-value light-text">Salmon #FA8072</div>
+        </div>
+        <div class="color-card" style="background-color: #FFA07A;">
+            <div class="color-name dark-text">浅鲑红</div>
+            <div class="color-value dark-text">LightSalmon #FFA07A</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7F50;">
+            <div class="color-name dark-text">珊瑚色</div>
+            <div class="color-value dark-text">Coral #FF7F50</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8C69;">
+            <div class="color-name light-text">三文鱼红</div>
+            <div class="color-value light-text">Salmon #FF8C69</div>
+        </div>
+        <div class="color-card" style="background-color: #FF4040;">
+            <div class="color-name light-text">褐红</div>
+            <div class="color-value light-text">BrownRed #FF4040</div>
+        </div>
+        <div class="color-card" style="background-color: #FF3333;">
+            <div class="color-name light-text">火红</div>
+            <div class="color-value light-text">FireRed #FF3333</div>
+        </div>
+        <div class="color-card" style="background-color: #FF2400;">
+            <div class="color-name light-text">猩红</div>
+            <div class="color-value light-text">Scarlet #FF2400</div>
+        </div>
+        <div class="color-card" style="background-color: #FF0033;">
+            <div class="color-name light-text">胭脂红</div>
+            <div class="color-value light-text">Carmine #FF0033</div>
+        </div>
+        <div class="color-card" style="background-color: #CC0000;">
+            <div class="color-name light-text">深猩红</div>
+            <div class="color-value light-text">DeepScarlet #CC0000</div>
+        </div>
+        <div class="color-card" style="background-color: #990000;">
+            <div class="color-name light-text">酒红</div>
+            <div class="color-value light-text">WineRed #990000</div>
+        </div>
+        <div class="color-card" style="background-color: #800000;">
+            <div class="color-name light-text">栗色</div>
+            <div class="color-value light-text">Maroon #800000</div>
+        </div>
+        <div class="color-card" style="background-color: #D10047;">
+            <div class="color-name light-text">玫瑰红</div>
+            <div class="color-value light-text">RoseRed #D10047</div>
+        </div>
+        <div class="color-card" style="background-color: #E32636;">
+            <div class="color-name light-text">茜红</div>
+            <div class="color-value light-text">AlizarinRed #E32636</div>
+        </div>
+        <div class="color-card" style="background-color: #ED1C24;">
+            <div class="color-name light-text">中国红</div>
+            <div class="color-value light-text">ChineseRed #ED1C24</div>
+        </div>
+        <div class="color-card" style="background-color: #C21807;">
+            <div class="color-name light-text">朱红</div>
+            <div class="color-value light-text">Vermilion #C21807</div>
+        </div>
+        <div class="color-card" style="background-color: #FF4D00;">
+            <div class="color-name light-text">橘红</div>
+            <div class="color-value light-text">TangerineRed #FF4D00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF0050;">
+            <div class="color-name light-text">品红</div>
+            <div class="color-value light-text">FuchsiaRed #FF0050</div>
+        </div>
+        <div class="color-card" style="background-color: #FF0090;">
+            <div class="color-name light-text">粉红</div>
+            <div class="color-value light-text">PinkRed #FF0090</div>
+        </div>
+        <div class="color-card" style="background-color: #FF1493;">
+            <div class="color-name light-text">深粉红</div>
+            <div class="color-value light-text">DeepPink #FF1493</div>
+        </div>
+        <div class="color-card" style="background-color: #FF69B4;">
+            <div class="color-name dark-text">热粉红</div>
+            <div class="color-value dark-text">HotPink #FF69B4</div>
+        </div>
+        <div class="color-card" style="background-color: #DB7093;">
+            <div class="color-name light-text">苍紫红</div>
+            <div class="color-value light-text">PaleVioletRed #DB7093</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 橙色系 (25种) -->
+<div class="color-section">
+    <h2>橙色系 (25种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #FFA500;">
+            <div class="color-name dark-text">橙色</div>
+            <div class="color-value dark-text">Orange #FFA500</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8C00;">
+            <div class="color-name dark-text">深橙色</div>
+            <div class="color-value dark-text">DarkOrange #FF8C00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7F50;">
+            <div class="color-name dark-text">珊瑚色</div>
+            <div class="color-value dark-text">Coral #FF7F50</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6347;">
+            <div class="color-name light-text">番茄色</div>
+            <div class="color-value light-text">Tomato #FF6347</div>
+        </div>
+        <div class="color-card" style="background-color: #FF4500;">
+            <div class="color-name light-text">橙红色</div>
+            <div class="color-value light-text">OrangeRed #FF4500</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8C69;">
+            <div class="color-name dark-text">三文鱼橙</div>
+            <div class="color-value dark-text">Salmon #FF8C69</div>
+        </div>
+        <div class="color-card" style="background-color: #FFA07A;">
+            <div class="color-name dark-text">浅鲑橙</div>
+            <div class="color-value dark-text">LightSalmon #FFA07A</div>
+        </div>
+        <div class="color-card" style="background-color: #E9967A;">
+            <div class="color-name dark-text">暗鲑橙</div>
+            <div class="color-value dark-text">DarkSalmon #E9967A</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7256;">
+            <div class="color-name light-text">鲜橙</div>
+            <div class="color-value light-text">VividOrange #FF7256</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8033;">
+            <div class="color-name dark-text">亮橙</div>
+            <div class="color-value dark-text">BrightOrange #FF8033</div>
+        </div>
+        <div class="color-card" style="background-color: #FF9933;">
+            <div class="color-name dark-text">南瓜橙</div>
+            <div class="color-value dark-text">Pumpkin #FF9933</div>
+        </div>
+        <div class="color-card" style="background-color: #FF884D;">
+            <div class="color-name dark-text">蜜橙</div>
+            <div class="color-value dark-text">HoneyOrange #FF884D</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7722;">
+            <div class="color-name dark-text">火焰橙</div>
+            <div class="color-value dark-text">FlameOrange #FF7722</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6600;">
+            <div class="color-name dark-text">霓虹橙</div>
+            <div class="color-value dark-text">NeonOrange #FF6600</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7518;">
+            <div class="color-name dark-text">南瓜灯橙</div>
+            <div class="color-value dark-text">JackOLantern #FF7518</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8B28;">
+            <div class="color-name dark-text">芒果橙</div>
+            <div class="color-value dark-text">Mango #FF8B28</div>
+        </div>
+        <div class="color-card" style="background-color: #FF9A00;">
+            <div class="color-name dark-text">琥珀橙</div>
+            <div class="color-value dark-text">Amber #FF9A00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF8000;">
+            <div class="color-name dark-text">交通橙</div>
+            <div class="color-value dark-text">TrafficOrange #FF8000</div>
+        </div>
+        <div class="color-card" style="background-color: #FF7E00;">
+            <div class="color-name dark-text">安全橙</div>
+            <div class="color-value dark-text">SafetyOrange #FF7E00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6D00;">
+            <div class="color-name dark-text">深琥珀橙</div>
+            <div class="color-value dark-text">DeepAmber #FF6D00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF5F00;">
+            <div class="color-name dark-text">红橙</div>
+            <div class="color-value dark-text">RedOrange #FF5F00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF4D00;">
+            <div class="color-name dark-text">国际橙</div>
+            <div class="color-value dark-text">InternationalOrange #FF4D00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF3C00;">
+            <div class="color-name light-text">法拉利橙</div>
+            <div class="color-value light-text">FerrariOrange #FF3C00</div>
+        </div>
+        <div class="color-card" style="background-color: #FF2A00;">
+            <div class="color-name light-text">辣椒橙</div>
+            <div class="color-value light-text">ChiliOrange #FF2A00</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 黄色系 (25种) -->
+<div class="color-section">
+    <h2>黄色系 (25种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #FFFF00;">
+            <div class="color-name dark-text">黄色</div>
+            <div class="color-value dark-text">Yellow #FFFF00</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD700;">
+            <div class="color-name dark-text">金色</div>
+            <div class="color-value dark-text">Gold #FFD700</div>
+        </div>
+        <div class="color-card" style="background-color: #FFDF00;">
+            <div class="color-name dark-text">柠檬黄</div>
+            <div class="color-value dark-text">Lemon #FFDF00</div>
+        </div>
+        <div class="color-card" style="background-color: #FFEF00;">
+            <div class="color-name dark-text">鲜黄</div>
+            <div class="color-value dark-text">Canary #FFEF00</div>
+        </div>
+        <div class="color-card" style="background-color: #F5E216;">
+            <div class="color-name dark-text">香蕉黄</div>
+            <div class="color-value dark-text">Banana #F5E216</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD300;">
+            <div class="color-name dark-text">镉黄</div>
+            <div class="color-value dark-text">Cadmium #FFD300</div>
+        </div>
+        <div class="color-card" style="background-color: #FFC40C;">
+            <div class="color-name dark-text">校车黄</div>
+            <div class="color-value dark-text">SchoolBus #FFC40C</div>
+        </div>
+        <div class="color-card" style="background-color: #FFC200;">
+            <div class="color-name dark-text">蜜黄</div>
+            <div class="color-value dark-text">Honey #FFC200</div>
+        </div>
+        <div class="color-card" style="background-color: #FFC800;">
+            <div class="color-name dark-text">玉米黄</div>
+            <div class="color-value dark-text">Corn #FFC800</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD400;">
+            <div class="color-name dark-text">向日葵黄</div>
+            <div class="color-value dark-text">Sunflower #FFD400</div>
+        </div>
+        <div class="color-card" style="background-color: #FFDB58;">
+            <div class="color-name dark-text">芥末黄</div>
+            <div class="color-value dark-text">Mustard #FFDB58</div>
+        </div>
+        <div class="color-card" style="background-color: #F0E68C;">
+            <div class="color-name dark-text">卡其黄</div>
+            <div class="color-value dark-text">Khaki #F0E68C</div>
+        </div>
+        <div class="color-card" style="background-color: #EEE8AA;">
+            <div class="color-name dark-text">浅卡其黄</div>
+            <div class="color-value dark-text">PaleKhaki #EEE8AA</div>
+        </div>
+        <div class="color-card" style="background-color: #FFDE7D;">
+            <div class="color-name dark-text">香槟黄</div>
+            <div class="color-value dark-text">Champagne #FFDE7D</div>
+        </div>
+        <div class="color-card" style="background-color: #FADA5E;">
+            <div class="color-name dark-text">芒果黄</div>
+            <div class="color-value dark-text">Mango #FADA5E</div>
+        </div>
+        <div class="color-card" style="background-color: #FFE135;">
+            <div class="color-name dark-text">香蕉奶油黄</div>
+            <div class="color-value dark-text">BananaCream #FFE135</div>
+        </div>
+        <div class="color-card" style="background-color: #FFDA03;">
+            <div class="color-name dark-text">交通黄</div>
+            <div class="color-value dark-text">TrafficYellow #FFDA03</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD700;">
+            <div class="color-name dark-text">金丝雀黄</div>
+            <div class="color-value dark-text">CanaryYellow #FFD700</div>
+        </div>
+        <div class="color-card" style="background-color: #FFD300;">
+            <div class="color-name dark-text">安全黄</div>
+            <div class="color-value dark-text">SafetyYellow #FFD300</div>
+        </div>
+        <div class="color-card" style="background-color: #FFCC33;">
+            <div class="color-name dark-text">麦黄</div>
+            <div class="color-value dark-text">Wheat #FFCC33</div>
+        </div>
+        <div class="color-card" style="background-color: #FFC72C;">
+            <div class="color-name dark-text">奶油黄</div>
+            <div class="color-value dark-text">Cream #FFC72C</div>
+        </div>
+        <div class="color-card" style="background-color: #FFC000;">
+            <div class="color-name dark-text">琥珀黄</div>
+            <div class="color-value dark-text">AmberYellow #FFC000</div>
+        </div>
+        <div class="color-card" style="background-color: #FFB347;">
+            <div class="color-name dark-text">橙黄</div>
+            <div class="color-value dark-text">OrangeYellow #FFB347</div>
+        </div>
+        <div class="color-card" style="background-color: #FFAA1D;">
+            <div class="color-name dark-text">霓虹黄</div>
+            <div class="color-value dark-text">NeonYellow #FFAA1D</div>
+        </div>
+        <div class="color-card" style="background-color: #FFA500;">
+            <div class="color-name dark-text">网页标准黄</div>
+            <div class="color-value dark-text">WebYellow #FFA500</div>
+        </div>
+    </div>
+</div>
+    <!-- 绿色系 (35种) -->
+<div class="color-section">
+    <h2>绿色系 (35种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #008000;">
+            <div class="color-name light-text">绿色</div>
+            <div class="color-value light-text">Green #008000</div>
+        </div>
+        <div class="color-card" style="background-color: #00FF00;">
+            <div class="color-name dark-text">酸橙绿</div>
+            <div class="color-value dark-text">Lime #00FF00</div>
+        </div>
+        <div class="color-card" style="background-color: #32CD32;">
+            <div class="color-name dark-text">柠檬绿</div>
+            <div class="color-value dark-text">LimeGreen #32CD32</div>
+        </div>
+        <div class="color-card" style="background-color: #3CB371;">
+            <div class="color-name light-text">中海绿</div>
+            <div class="color-value light-text">MediumSeaGreen #3CB371</div>
+        </div>
+        <div class="color-card" style="background-color: #2E8B57;">
+            <div class="color-name light-text">海绿</div>
+            <div class="color-value light-text">SeaGreen #2E8B57</div>
+        </div>
+        <div class="color-card" style="background-color: #228B22;">
+            <div class="color-name light-text">森林绿</div>
+            <div class="color-value light-text">ForestGreen #228B22</div>
+        </div>
+        <div class="color-card" style="background-color: #006400;">
+            <div class="color-name light-text">深绿</div>
+            <div class="color-value light-text">DarkGreen #006400</div>
+        </div>
+        <div class="color-card" style="background-color: #9ACD32;">
+            <div class="color-name dark-text">黄绿</div>
+            <div class="color-value dark-text">YellowGreen #9ACD32</div>
+        </div>
+        <div class="color-card" style="background-color: #6B8E23;">
+            <div class="color-name light-text">橄榄绿</div>
+            <div class="color-value light-text">OliveDrab #6B8E23</div>
+        </div>
+        <div class="color-card" style="background-color: #556B2F;">
+            <div class="color-name light-text">暗橄榄绿</div>
+            <div class="color-value light-text">DarkOliveGreen #556B2F</div>
+        </div>
+        <div class="color-card" style="background-color: #66CDAA;">
+            <div class="color-name dark-text">中碧绿</div>
+            <div class="color-value dark-text">MediumAquamarine #66CDAA</div>
+        </div>
+        <div class="color-card" style="background-color: #8FBC8F;">
+            <div class="color-name dark-text">暗海绿</div>
+            <div class="color-value dark-text">DarkSeaGreen #8FBC8F</div>
+        </div>
+        <div class="color-card" style="background-color: #20B2AA;">
+            <div class="color-name light-text">浅海绿</div>
+            <div class="color-value light-text">LightSeaGreen #20B2AA</div>
+        </div>
+        <div class="color-card" style="background-color: #00FA9A;">
+            <div class="color-name dark-text">中春绿</div>
+            <div class="color-value dark-text">MediumSpringGreen #00FA9A</div>
+        </div>
+        <div class="color-card" style="background-color: #00FF7F;">
+            <div class="color-name dark-text">春绿</div>
+            <div class="color-value dark-text">SpringGreen #00FF7F</div>
+        </div>
+        <div class="color-card" style="background-color: #7CFC00;">
+            <div class="color-name dark-text">草坪绿</div>
+            <div class="color-value dark-text">LawnGreen #7CFC00</div>
+        </div>
+        <div class="color-card" style="background-color: #7FFF00;">
+            <div class="color-name dark-text">查特酒绿</div>
+            <div class="color-value dark-text">Chartreuse #7FFF00</div>
+        </div>
+        <div class="color-card" style="background-color: #ADFF2F;">
+            <div class="color-name dark-text">绿黄</div>
+            <div class="color-value dark-text">GreenYellow #ADFF2F</div>
+        </div>
+        <div class="color-card" style="background-color: #98FB98;">
+            <div class="color-name dark-text">淡绿</div>
+            <div class="color-value dark-text">PaleGreen #98FB98</div>
+        </div>
+        <div class="color-card" style="background-color: #90EE90;">
+            <div class="color-name dark-text">浅绿</div>
+            <div class="color-value dark-text">LightGreen #90EE90</div>
+        </div>
+        <div class="color-card" style="background-color: #00FF00;">
+            <div class="color-name dark-text">纯绿</div>
+            <div class="color-value dark-text">PureGreen #00FF00</div>
+        </div>
+        <div class="color-card" style="background-color: #00CC00;">
+            <div class="color-name light-text">鲜绿</div>
+            <div class="color-value light-text">VividGreen #00CC00</div>
+        </div>
+        <div class="color-card" style="background-color: #009E60;">
+            <div class="color-name light-text">孔雀绿</div>
+            <div class="color-value light-text">PeacockGreen #009E60</div>
+        </div>
+        <div class="color-card" style="background-color: #1B4D3E;">
+            <div class="color-name light-text">碧绿</div>
+            <div class="color-value light-text">Emerald #1B4D3E</div>
+        </div>
+        <div class="color-card" style="background-color: #4B5320;">
+            <div class="color-name light-text">军绿</div>
+            <div class="color-value light-text">ArmyGreen #4B5320</div>
+        </div>
+        <div class="color-card" style="background-color: #3A5F0B;">
+            <div class="color-name light-text">橄榄军绿</div>
+            <div class="color-value light-text">OliveGreen #3A5F0B</div>
+        </div>
+        <div class="color-card" style="background-color: #5F8575;">
+            <div class="color-name light-text">灰绿</div>
+            <div class="color-value light-text">GrayGreen #5F8575</div>
+        </div>
+        <div class="color-card" style="background-color: #4F7942;">
+            <div class="color-name light-text">蕨绿</div>
+            <div class="color-value light-text">FernGreen #4F7942</div>
+        </div>
+        <div class="color-card" style="background-color: #355E3B;">
+            <div class="color-name light-text">猎人绿</div>
+            <div class="color-value light-text">HunterGreen #355E3B</div>
+        </div>
+        <div class="color-card" style="background-color: #8A9A5B;">
+            <div class="color-name light-text">苔藓绿</div>
+            <div class="color-value light-text">MossGreen #8A9A5B</div>
+        </div>
+        <div class="color-card" style="background-color: #77DD77;">
+            <div class="color-name dark-text">薄荷绿</div>
+            <div class="color-value dark-text">MintGreen #77DD77</div>
+        </div>
+        <div class="color-card" style="background-color: #50C878;">
+            <div class="color-name light-text">翡翠绿</div>
+            <div class="color-value light-text">Jade #50C878</div>
+        </div>
+        <div class="color-card" style="background-color: #57A639;">
+            <div class="color-name light-text">苹果绿</div>
+            <div class="color-value light-text">AppleGreen #57A639</div>
+        </div>
+        <div class="color-card" style="background-color: #3B7A57;">
+            <div class="color-name light-text">亚马逊绿</div>
+            <div class="color-value light-text">Amazon #3B7A57</div>
+        </div>
+        <div class="color-card" style="background-color: #00A877;">
+            <div class="color-name light-text">孔雀石绿</div>
+            <div class="color-value light-text">Malachite #00A877</div>
+        </div>
+        <div class="color-card" style="background-color: #29AB87;">
+            <div class="color-name light-text">丛林绿</div>
+            <div class="color-value light-text">JungleGreen #29AB87</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 蓝色系 (40种) -->
+<div class="color-section">
+    <h2>蓝色系 (40种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #0000FF;">
+            <div class="color-name light-text">蓝色</div>
+            <div class="color-value light-text">Blue #0000FF</div>
+        </div>
+        <div class="color-card" style="background-color: #1E90FF;">
+            <div class="color-name light-text">道奇蓝</div>
+            <div class="color-value light-text">DodgerBlue #1E90FF</div>
+        </div>
+        <div class="color-card" style="background-color: #4169E1;">
+            <div class="color-name light-text">皇室蓝</div>
+            <div class="color-value light-text">RoyalBlue #4169E1</div>
+        </div>
+        <div class="color-card" style="background-color: #000080;">
+            <div class="color-name light-text">海军蓝</div>
+            <div class="color-value light-text">Navy #000080</div>
+        </div>
+        <div class="color-card" style="background-color: #00008B;">
+            <div class="color-name light-text">深蓝</div>
+            <div class="color-value light-text">DarkBlue #00008B</div>
+        </div>
+        <div class="color-card" style="background-color: #0000CD;">
+            <div class="color-name light-text">中蓝</div>
+            <div class="color-value light-text">MediumBlue #0000CD</div>
+        </div>
+        <div class="color-card" style="background-color: #4682B4;">
+            <div class="color-name light-text">钢蓝</div>
+            <div class="color-value light-text">SteelBlue #4682B4</div>
+        </div>
+        <div class="color-card" style="background-color: #5F9EA0;">
+            <div class="color-name light-text">军服蓝</div>
+            <div class="color-value light-text">CadetBlue #5F9EA0</div>
+        </div>
+        <div class="color-card" style="background-color: #6495ED;">
+            <div class="color-name light-text">矢车菊蓝</div>
+            <div class="color-value light-text">CornflowerBlue #6495ED</div>
+        </div>
+        <div class="color-card" style="background-color: #00BFFF;">
+            <div class="color-name dark-text">深天蓝</div>
+            <div class="color-value dark-text">DeepSkyBlue #00BFFF</div>
+        </div>
+        <div class="color-card" style="background-color: #87CEEB;">
+            <div class="color-name dark-text">天蓝</div>
+            <div class="color-value dark-text">SkyBlue #87CEEB</div>
+        </div>
+        <div class="color-card" style="background-color: #87CEFA;">
+            <div class="color-name dark-text">浅天蓝</div>
+            <div class="color-value dark-text">LightSkyBlue #87CEFA</div>
+        </div>
+        <div class="color-card" style="background-color: #ADD8E6;">
+            <div class="color-name dark-text">浅蓝</div>
+            <div class="color-value dark-text">LightBlue #ADD8E6</div>
+        </div>
+        <div class="color-card" style="background-color: #B0E0E6;">
+            <div class="color-name dark-text">粉蓝</div>
+            <div class="color-value dark-text">PowderBlue #B0E0E6</div>
+        </div>
+        <div class="color-card" style="background-color: #7B68EE;">
+            <div class="color-name light-text">中板岩蓝</div>
+            <div class="color-value light-text">MediumSlateBlue #7B68EE</div>
+        </div>
+        <div class="color-card" style="background-color: #6A5ACD;">
+            <div class="color-name light-text">板岩蓝</div>
+            <div class="color-value light-text">SlateBlue #6A5ACD</div>
+        </div>
+        <div class="color-card" style="background-color: #483D8B;">
+            <div class="color-name light-text">暗板岩蓝</div>
+            <div class="color-value light-text">DarkSlateBlue #483D8B</div>
+        </div>
+        <div class="color-card" style="background-color: #8A2BE2;">
+            <div class="color-name light-text">蓝紫</div>
+            <div class="color-value light-text">BlueViolet #8A2BE2</div>
+        </div>
+        <div class="color-card" style="background-color: #4B0082;">
+            <div class="color-name light-text">靛蓝</div>
+            <div class="color-value light-text">Indigo #4B0082</div>
+        </div>
+        <div class="color-card" style="background-color: #191970;">
+            <div class="color-name light-text">午夜蓝</div>
+            <div class="color-value light-text">MidnightBlue #191970</div>
+        </div>
+        <div class="color-card" style="background-color: #000033;">
+            <div class="color-name light-text">暗夜蓝</div>
+            <div class="color-value light-text">DarkNight #000033</div>
+        </div>
+        <div class="color-card" style="background-color: #003366;">
+            <div class="color-name light-text">深海军蓝</div>
+            <div class="color-value light-text">DarkNavy #003366</div>
+        </div>
+        <div class="color-card" style="background-color: #0066CC;">
+            <div class="color-name light-text">湖蓝</div>
+            <div class="color-value light-text">LakeBlue #0066CC</div>
+        </div>
+        <div class="color-card" style="background-color: #0099CC;">
+            <div class="color-name light-text">孔雀蓝</div>
+            <div class="color-value light-text">PeacockBlue #0099CC</div>
+        </div>
+        <div class="color-card" style="background-color: #00CCFF;">
+            <div class="color-name dark-text">霓虹蓝</div>
+            <div class="color-value dark-text">NeonBlue #00CCFF</div>
+        </div>
+        <div class="color-card" style="background-color: #33A1C9;">
+            <div class="color-name light-text">宝石蓝</div>
+            <div class="color-value light-text">Sapphire #33A1C9</div>
+        </div>
+        <div class="color-card" style="background-color: #73C2FB;">
+            <div class="color-name dark-text">婴儿蓝</div>
+            <div class="color-value dark-text">BabyBlue #73C2FB</div>
+        </div>
+        <div class="color-card" style="background-color: #89CFF0;">
+            <div class="color-name dark-text">天青蓝</div>
+            <div class="color-value dark-text">Azure #89CFF0</div>
+        </div>
+        <div class="color-card" style="background-color: #1F75FE;">
+            <div class="color-name light-text">钴蓝</div>
+            <div class="color-value light-text">Cobalt #1F75FE</div>
+        </div>
+        <div class="color-card" style="background-color: #2A52BE;">
+            <div class="color-name light-text">蔚蓝</div>
+            <div class="color-value light-text">Cerulean #2A52BE</div>
+        </div>
+        <div class="color-card" style="background-color: #1560BD;">
+            <div class="color-name light-text">牛仔蓝</div>
+            <div class="color-value light-text">Denim #1560BD</div>
+        </div>
+        <div class="color-card" style="background-color: #0F52BA;">
+            <div class="color-name light-text">普鲁士蓝</div>
+            <div class="color-value light-text">PrussianBlue #0F52BA</div>
+        </div>
+        <div class="color-card" style="background-color: #1034A6;">
+            <div class="color-name light-text">埃及蓝</div>
+            <div class="color-value light-text">EgyptianBlue #1034A6</div>
+        </div>
+        <div class="color-card" style="background-color: #1D2951;">
+            <div class="color-name light-text">太空蓝</div>
+            <div class="color-value light-text">SpaceBlue #1D2951</div>
+        </div>
+        <div class="color-card" style="background-color: #002366;">
+            <div class="color-name light-text">牛津蓝</div>
+            <div class="color-value light-text">OxfordBlue #002366</div>
+        </div>
+        <div class="color-card" style="background-color: #002FA7;">
+            <div class="color-name light-text">国际克莱因蓝</div>
+            <div class="color-value light-text">KleinBlue #002FA7</div>
+        </div>
+        <div class="color-card" style="background-color: #3F00FF;">
+            <div class="color-name light-text">群青</div>
+            <div class="color-value light-text">Ultramarine #3F00FF</div>
+        </div>
+        <div class="color-card" style="background-color: #545AA7;">
+            <div class="color-name light-text">自由蓝</div>
+            <div class="color-value light-text">Liberty #545AA7</div>
+        </div>
+        <div class="color-card" style="background-color: #5072A7;">
+            <div class="color-name light-text">蓝灰</div>
+            <div class="color-value light-text">BlueGray #5072A7</div>
+        </div>
+        <div class="color-card" style="background-color: #6699CC;">
+            <div class="color-name light-text">哥伦比亚蓝</div>
+            <div class="color-value light-text">Columbia #6699CC</div>
+        </div>
+        <div class="color-card" style="background-color: #72A0C1;">
+            <div class="color-name light-text">航空蓝</div>
+            <div class="color-value light-text">Aero #72A0C1</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 紫色系 (30种) -->
+<div class="color-section">
+    <h2>紫色系 (30种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #800080;">
+            <div class="color-name light-text">紫色</div>
+            <div class="color-value light-text">Purple #800080</div>
+        </div>
+        <div class="color-card" style="background-color: #9932CC;">
+            <div class="color-name light-text">深兰花紫</div>
+            <div class="color-value light-text">DarkOrchid #9932CC</div>
+        </div>
+        <div class="color-card" style="background-color: #9400D3;">
+            <div class="color-name light-text">深紫罗兰</div>
+            <div class="color-value light-text">DarkViolet #9400D3</div>
+        </div>
+        <div class="color-card" style="background-color: #8A2BE2;">
+            <div class="color-name light-text">蓝紫</div>
+            <div class="color-value light-text">BlueViolet #8A2BE2</div>
+        </div>
+        <div class="color-card" style="background-color: #9370DB;">
+            <div class="color-name dark-text">中紫</div>
+            <div class="color-value dark-text">MediumPurple #9370DB</div>
+        </div>
+        <div class="color-card" style="background-color: #BA55D3;">
+            <div class="color-name light-text">中兰花紫</div>
+            <div class="color-value light-text">MediumOrchid #BA55D3</div>
+        </div>
+        <div class="color-card" style="background-color: #DA70D6;">
+            <div class="color-name dark-text">兰花紫</div>
+            <div class="color-value dark-text">Orchid #DA70D6</div>
+        </div>
+        <div class="color-card" style="background-color: #D8BFD8;">
+            <div class="color-name dark-text">蓟紫</div>
+            <div class="color-value dark-text">Thistle #D8BFD8</div>
+        </div>
+        <div class="color-card" style="background-color: #DDA0DD;">
+            <div class="color-name dark-text">梅紫</div>
+            <div class="color-value dark-text">Plum #DDA0DD</div>
+        </div>
+        <div class="color-card" style="background-color: #EE82EE;">
+            <div class="color-name dark-text">紫红</div>
+            <div class="color-value dark-text">Violet #EE82EE</div>
+        </div>
+        <div class="color-card" style="background-color: #FF00FF;">
+            <div class="color-name light-text">洋红</div>
+            <div class="color-value light-text">Magenta #FF00FF</div>
+        </div>
+        <div class="color-card" style="background-color: #8B008B;">
+            <div class="color-name light-text">暗紫红</div>
+            <div class="color-value light-text">DarkMagenta #8B008B</div>
+        </div>
+        <div class="color-card" style="background-color: #4B0082;">
+            <div class="color-name light-text">靛蓝</div>
+            <div class="color-value light-text">Indigo #4B0082</div>
+        </div>
+        <div class="color-card" style="background-color: #6A0DAD;">
+            <div class="color-name light-text">紫水晶</div>
+            <div class="color-value light-text">Amethyst #6A0DAD</div>
+        </div>
+        <div class="color-card" style="background-color: #7F00FF;">
+            <div class="color-name light-text">紫罗兰</div>
+            <div class="color-value light-text">Violet #7F00FF</div>
+        </div>
+        <div class="color-card" style="background-color: #A020F0;">
+            <div class="color-name light-text">紫藤</div>
+            <div class="color-value light-text">Wisteria #A020F0</div>
+        </div>
+        <div class="color-card" style="background-color: #BF00FF;">
+            <div class="color-name light-text">电紫</div>
+            <div class="color-value light-text">ElectricPurple #BF00FF</div>
+        </div>
+        <div class="color-card" style="background-color: #C71585;">
+            <div class="color-name light-text">中紫红</div>
+            <div class="color-value light-text">MediumVioletRed #C71585</div>
+        </div>
+        <div class="color-card" style="background-color: #D300F5;">
+            <div class="color-name light-text">霓虹紫</div>
+            <div class="color-value light-text">NeonPurple #D300F5</div>
+        </div>
+        <div class="color-card" style="background-color: #B57EDC;">
+            <div class="color-name dark-text">薰衣草紫</div>
+            <div class="color-value dark-text">Lavender #B57EDC</div>
+        </div>
+        <div class="color-card" style="background-color: #E0B0FF;">
+            <div class="color-name dark-text">淡紫</div>
+            <div class="color-value dark-text">Mauve #E0B0FF</div>
+        </div>
+        <div class="color-card" style="background-color: #C9A0DC;">
+            <div class="color-name dark-text">紫丁香</div>
+            <div class="color-value dark-text">Lilac #C9A0DC</div>
+        </div>
+        <div class="color-card" style="background-color: #CC99FF;">
+            <div class="color-name dark-text">浅紫</div>
+            <div class="color-value dark-text">LightPurple #CC99FF</div>
+        </div>
+        <div class="color-card" style="background-color: #B399FF;">
+            <div class="color-name dark-text">紫晶</div>
+            <div class="color-value dark-text">AmethystSmoke #B399FF</div>
+        </div>
+        <div class="color-card" style="background-color: #9F00C5;">
+            <div class="color-name light-text">深紫</div>
+            <div class="color-value light-text">DeepPurple #9F00C5</div>
+        </div>
+        <div class="color-card" style="background-color: #8E35EF;">
+            <div class="color-name light-text">皇家紫</div>
+            <div class="color-value light-text">RoyalPurple #8E35EF</div>
+        </div>
+        <div class="color-card" style="background-color: #702963;">
+            <div class="color-name light-text">紫酱</div>
+            <div class="color-value light-text">Byzantium #702963</div>
+        </div>
+        <div class="color-card" style="background-color: #583759;">
+            <div class="color-name light-text">暗紫</div>
+            <div class="color-value light-text">DarkPurple #583759</div>
+        </div>
+        <div class="color-card" style="background-color: #4C2882;">
+            <div class="color-name light-text">帝王紫</div>
+            <div class="color-value light-text">ImperialPurple #4C2882</div>
+        </div>
+        <div class="color-card" style="background-color: #663399;">
+            <div class="color-name light-text">丽贝卡紫</div>
+            <div class="color-value light-text">RebeccaPurple #663399</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 粉色系 (25种) -->
+<div class="color-section">
+    <h2>粉色系 (25种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #FFC0CB;">
+            <div class="color-name dark-text">粉色</div>
+            <div class="color-value dark-text">Pink #FFC0CB</div>
+        </div>
+        <div class="color-card" style="background-color: #FF69B4;">
+            <div class="color-name dark-text">热粉色</div>
+            <div class="color-value dark-text">HotPink #FF69B4</div>
+        </div>
+        <div class="color-card" style="background-color: #FF1493;">
+            <div class="color-name light-text">深粉色</div>
+            <div class="color-value light-text">DeepPink #FF1493</div>
+        </div>
+        <div class="color-card" style="background-color: #DB7093;">
+            <div class="color-name light-text">苍紫红</div>
+            <div class="color-value light-text">PaleVioletRed #DB7093</div>
+        </div>
+        <div class="color-card" style="background-color: #FFB6C1;">
+            <div class="color-name dark-text">浅粉红</div>
+            <div class="color-value dark-text">LightPink #FFB6C1</div>
+        </div>
+        <div class="color-card" style="background-color: #FFAEB9;">
+            <div class="color-name dark-text">粉红</div>
+            <div class="color-value dark-text">Pink #FFAEB9</div>
+        </div>
+        <div class="color-card" style="background-color: #EEA9B8;">
+            <div class="color-name dark-text">中粉红</div>
+            <div class="color-value dark-text">MediumPink #EEA9B8</div>
+        </div>
+        <div class="color-card" style="background-color: #FF82AB;">
+            <div class="color-name dark-text">桃红</div>
+            <div class="color-value dark-text">PeachPink #FF82AB</div>
+        </div>
+        <div class="color-card" style="background-color: #FF6EB4;">
+            <div class="color-name dark-text">霓虹粉</div>
+            <div class="color-value dark-text">NeonPink #FF6EB4</div>
+        </div>
+        <div class="color-card" style="background-color: #FF3E96;">
+            <div class="color-name light-text">紫红</div>
+            <div class="color-value light-text">FuchsiaPink #FF3E96</div>
+        </div>
+        <div class="color-card" style="background-color: #FD349C;">
+            <div class="color-name light-text">玫红</div>
+            <div class="color-value light-text">RosePink #FD349C</div>
+        </div>
+        <div class="color-card" style="background-color: #E75480;">
+            <div class="color-name light-text">暗粉红</div>
+            <div class="color-value light-text">DarkPink #E75480</div>
+        </div>
+        <div class="color-card" style="background-color: #DE3163;">
+            <div class="color-name light-text">樱桃红</div>
+            <div class="color-value light-text">Cerise #DE3163</div>
+        </div>
+        <div class="color-card" style="background-color: #F64A8A;">
+            <div class="color-name light-text">法国玫瑰</div>
+            <div class="color-value light-text">FrenchRose #F64A8A</div>
+        </div>
+        <div class="color-card" style="background-color: #FF007F;">
+            <div class="color-name light-text">亮粉红</div>
+            <div class="color-value light-text">BrightPink #FF007F</div>
+        </div>
+        <div class="color-card" style="background-color: #FC0FC0;">
+            <div class="color-name light-text">震撼粉</div>
+            <div class="color-value light-text">ShockingPink #FC0FC0</div>
+        </div>
+        <div class="color-card" style="background-color: #FF77FF;">
+            <div class="color-name dark-text">泡泡糖粉</div>
+            <div class="color-value dark-text">Bubblegum #FF77FF</div>
+        </div>
+        <div class="color-card" style="background-color: #FF99CC;">
+            <div class="color-name dark-text">棉花糖粉</div>
+            <div class="color-value dark-text">CottonCandy #FF99CC</div>
+        </div>
+        <div class="color-card" style="background-color: #FAAFBE;">
+            <div class="color-name dark-text">婴儿粉</div>
+            <div class="color-value dark-text">BabyPink #FAAFBE</div>
+        </div>
+        <div class="color-card" style="background-color: #FAAFBA;">
+            <div class="color-name dark-text">芭蕾粉</div>
+            <div class="color-value dark-text">Ballet #FAAFBA</div>
+        </div>
+        <div class="color-card" style="background-color: #FFB7D5;">
+            <div class="color-name dark-text">糖果粉</div>
+            <div class="color-value dark-text">CandyPink #FFB7D5</div>
+        </div>
+        <div class="color-card" style="background-color: #FFB8BF;">
+            <div class="color-name dark-text">贝壳粉</div>
+            <div class="color-value dark-text">SeashellPink #FFB8BF</div>
+        </div>
+        <div class="color-card" style="background-color: #FFDFDD;">
+            <div class="color-name dark-text">粉白</div>
+            <div class="color-value dark-text">PinkWhite #FFDFDD</div>
+        </div>
+        <div class="color-card" style="background-color: #FDD7E4;">
+            <div class="color-name dark-text">猪猪粉</div>
+            <div class="color-value dark-text">PigPink #FDD7E4</div>
+        </div>
+        <div class="color-card" style="background-color: #FFE4E1;">
+            <div class="color-name dark-text">雾粉</div>
+            <div class="color-value dark-text">MistyRose #FFE4E1</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 棕色系 (30种) -->
+<div class="color-section">
+    <h2>棕色系 (30种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #A52A2A;">
+            <div class="color-name light-text">棕色</div>
+            <div class="color-value light-text">Brown #A52A2A</div>
+        </div>
+        <div class="color-card" style="background-color: #8B4513;">
+            <div class="color-name light-text">马鞍棕</div>
+            <div class="color-value light-text">SaddleBrown #8B4513</div>
+        </div>
+        <div class="color-card" style="background-color: #D2691E;">
+            <div class="color-name light-text">巧克力棕</div>
+            <div class="color-value light-text">Chocolate #D2691E</div>
+        </div>
+        <div class="color-card" style="background-color: #CD853F;">
+            <div class="color-name dark-text">秘鲁棕</div>
+            <div class="color-value dark-text">Peru #CD853F</div>
+        </div>
+        <div class="color-card" style="background-color: #D2B48C;">
+            <div class="color-name dark-text">棕褐色</div>
+            <div class="color-value dark-text">Tan #D2B48C</div>
+        </div>
+        <div class="color-card" style="background-color: #BC8F8F;">
+            <div class="color-name dark-text">玫瑰棕</div>
+            <div class="color-value dark-text">RosyBrown #BC8F8F</div>
+        </div>
+        <div class="color-card" style="background-color: #F4A460;">
+            <div class="color-name dark-text">沙棕</div>
+            <div class="color-value dark-text">SandyBrown #F4A460</div>
+        </div>
+        <div class="color-card" style="background-color: #DEB887;">
+            <div class="color-name dark-text">原木棕</div>
+            <div class="color-value dark-text">BurlyWood #DEB887</div>
+        </div>
+        <div class="color-card" style="background-color: #B8860B;">
+            <div class="color-name light-text">暗金棕</div>
+            <div class="color-value light-text">DarkGoldenrod #B8860B</div>
+        </div>
+        <div class="color-card" style="background-color: #CD7F32;">
+            <div class="color-name light-text">青铜棕</div>
+            <div class="color-value light-text">Bronze #CD7F32</div>
+        </div>
+        <div class="color-card" style="background-color: #C19A6B;">
+            <div class="color-name dark-text">骆驼棕</div>
+            <div class="color-value dark-text">Camel #C19A6B</div>
+        </div>
+        <div class="color-card" style="background-color: #B5651D;">
+            <div class="color-name light-text">咖啡棕</div>
+            <div class="color-value light-text">Coffee #B5651D</div>
+        </div>
+        <div class="color-card" style="background-color: #80461B;">
+            <div class="color-name light-text">红棕</div>
+            <div class="color-value light-text">Russet #80461B</div>
+        </div>
+        <div class="color-card" style="background-color: #6F4E37;">
+            <div class="color-name light-text">咖啡色</div>
+            <div class="color-value light-text">CoffeeBean #6F4E37</div>
+        </div>
+        <div class="color-card" style="background-color: #5D4037;">
+            <div class="color-name light-text">深棕</div>
+            <div class="color-value light-text">DarkBrown #5D4037</div>
+        </div>
+        <div class="color-card" style="background-color: #654321;">
+            <div class="color-name light-text">暗棕</div>
+            <div class="color-value light-text">DarkBrown #654321</div>
+        </div>
+        <div class="color-card" style="background-color: #7B3F00;">
+            <div class="color-name light-text">可可棕</div>
+            <div class="color-value light-text">Cocoa #7B3F00</div>
+        </div>
+        <div class="color-card" style="background-color: #8B0000;">
+            <div class="color-name light-text">暗红棕</div>
+            <div class="color-value light-text">DarkRedBrown #8B0000</div>
+        </div>
+        <div class="color-card" style="background-color: #A0522D;">
+            <div class="color-name light-text">赭石棕</div>
+            <div class="color-value light-text">Sienna #A0522D</div>
+        </div>
+        <div class="color-card" style="background-color: #C04000;">
+            <div class="color-name light-text">红棕</div>
+            <div class="color-value light-text">Mahogany #C04000</div>
+        </div>
+        <div class="color-card" style="background-color: #E6C200;">
+            <div class="color-name dark-text">金棕</div>
+            <div class="color-value dark-text">GoldenBrown #E6C200</div>
+        </div>
+        <div class="color-card" style="background-color: #CC7722;">
+            <div class="color-name dark-text">赭色</div>
+            <div class="color-value dark-text">Ochre #CC7722</div>
+        </div>
+        <div class="color-card" style="background-color: #E3A857;">
+            <div class="color-name dark-text">蜂蜜棕</div>
+            <div class="color-value dark-text">HoneyBrown #E3A857</div>
+        </div>
+        <div class="color-card" style="background-color: #DAA520;">
+            <div class="color-name dark-text">金棕</div>
+            <div class="color-value dark-text">Goldenrod #DAA520</div>
+        </div>
+        <div class="color-card" style="background-color: #B68D4C;">
+            <div class="color-name dark-text">亚麻棕</div>
+            <div class="color-value dark-text">Linen #B68D4C</div>
+        </div>
+        <div class="color-card" style="background-color: #987654;">
+            <div class="color-name light-text">古铜棕</div>
+            <div class="color-value light-text">AntiqueBronze #987654</div>
+        </div>
+        <div class="color-card" style="background-color: #AF593E;">
+            <div class="color-name light-text">红土棕</div>
+            <div class="color-value light-text">RedClay #AF593E</div>
+        </div>
+        <div class="color-card" style="background-color: #8A3324;">
+            <div class="color-name light-text">烧赭石</div>
+            <div class="color-value light-text">BurntUmber #8A3324</div>
+        </div>
+        <div class="color-card" style="background-color: #6E260E;">
+            <div class="color-name light-text">深赭石</div>
+            <div class="color-value light-text">DeepUmber #6E260E</div>
+        </div>
+        <div class="color-card" style="background-color: #5C3317;">
+            <div class="color-name light-text">黑巧克力</div>
+            <div class="color-value light-text">DarkChocolate #5C3317</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 灰色系 (25种) -->
+<div class="color-section">
+    <h2>灰色系 (25种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #808080;">
+            <div class="color-name light-text">灰色</div>
+            <div class="color-value light-text">Gray #808080</div>
+        </div>
+        <div class="color-card" style="background-color: #696969;">
+            <div class="color-name light-text">暗灰</div>
+            <div class="color-value light-text">DimGray #696969</div>
+        </div>
+        <div class="color-card" style="background-color: #778899;">
+            <div class="color-name light-text">浅石板灰</div>
+            <div class="color-value light-text">LightSlateGray #778899</div>
+        </div>
+        <div class="color-card" style="background-color: #708090;">
+            <div class="color-name light-text">石板灰</div>
+            <div class="color-value light-text">SlateGray #708090</div>
+        </div>
+        <div class="color-card" style="background-color: #2F4F4F;">
+            <div class="color-name light-text">暗石板灰</div>
+            <div class="color-value light-text">DarkSlateGray #2F4F4F</div>
+        </div>
+        <div class="color-card" style="background-color: #A9A9A9;">
+            <div class="color-name dark-text">暗灰</div>
+            <div class="color-value dark-text">DarkGray #A9A9A9</div>
+        </div>
+        <div class="color-card" style="background-color: #C0C0C0;">
+            <div class="color-name dark-text">银灰</div>
+            <div class="color-value dark-text">Silver #C0C0C0</div>
+        </div>
+        <div class="color-card" style="background-color: #D3D3D3;">
+            <div class="color-name dark-text">浅灰</div>
+            <div class="color-value dark-text">LightGray #D3D3D3</div>
+        </div>
+        <div class="color-card" style="background-color: #DCDCDC;">
+            <div class="color-name dark-text">淡灰</div>
+            <div class="color-value dark-text">Gainsboro #DCDCDC</div>
+        </div>
+        <div class="color-card" style="background-color: #E5E5E5;">
+            <div class="color-name dark-text">白灰</div>
+            <div class="color-value dark-text">WhiteSmoke #E5E5E5</div>
+        </div>
+        <div class="color-card" style="background-color: #BEBEBE;">
+            <div class="color-name dark-text">中灰</div>
+            <div class="color-value dark-text">MediumGray #BEBEBE</div>
+        </div>
+        <div class="color-card" style="background-color: #999999;">
+            <div class="color-name light-text">水泥灰</div>
+            <div class="color-value light-text">CementGray #999999</div>
+        </div>
+        <div class="color-card" style="background-color: #888888;">
+            <div class="color-name light-text">碳灰</div>
+            <div class="color-value light-text">CarbonGray #888888</div>
+        </div>
+        <div class="color-card" style="background-color: #555555;">
+            <div class="color-name light-text">深灰</div>
+            <div class="color-value light-text">DarkCharcoal #555555</div>
+        </div>
+        <div class="color-card" style="background-color: #333333;">
+            <div class="color-name light-text">木炭灰</div>
+            <div class="color-value light-text">Charcoal #333333</div>
+        </div>
+        <div class="color-card" style="background-color: #222222;">
+            <div class="color-name light-text">黑灰</div>
+            <div class="color-value light-text">BlackGray #222222</div>
+        </div>
+        <div class="color-card" style="background-color: #E8E8E8;">
+            <div class="color-name dark-text">珍珠灰</div>
+            <div class="color-value dark-text">PearlGray #E8E8E8</div>
+        </div>
+        <div class="color-card" style="background-color: #F0F0F0;">
+            <div class="color-name dark-text">霜灰</div>
+            <div class="color-value dark-text">FrostGray #F0F0F0</div>
+        </div>
+        <div class="color-card" style="background-color: #CCCCCC;">
+            <div class="color-name dark-text">云灰</div>
+            <div class="color-value dark-text">CloudGray #CCCCCC</div>
+        </div>
+        <div class="color-card" style="background-color: #AAAAAA;">
+            <div class="color-name dark-text">铝灰</div>
+            <div class="color-value dark-text">AluminumGray #AAAAAA</div>
+        </div>
+        <div class="color-card" style="background-color: #666666;">
+            <div class="color-name light-text">钢灰</div>
+            <div class="color-value light-text">SteelGray #666666</div>
+        </div>
+        <div class="color-card" style="background-color: #444444;">
+            <div class="color-name light-text">石墨灰</div>
+            <div class="color-value light-text">Graphite #444444</div>
+        </div>
+        <div class="color-card" style="background-color: #3D3D3D;">
+            <div class="color-name light-text">铁灰</div>
+            <div class="color-value light-text">IronGray #3D3D3D</div>
+        </div>
+        <div class="color-card" style="background-color: #1A1A1A;">
+            <div class="color-name light-text">黑曜石灰</div>
+            <div class="color-value light-text">ObsidianGray #1A1A1A</div>
+        </div>
+        <div class="color-card" style="background-color: #F5F5F5;">
+            <div class="color-name dark-text">白烟灰</div>
+            <div class="color-value dark-text">WhiteSmokeGray #F5F5F5</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 白色系 (15种) -->
+<div class="color-section">
+    <h2>白色系 (15种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #FFFFFF; border: 1px solid #eee;">
+            <div class="color-name dark-text">纯白</div>
+            <div class="color-value dark-text">White #FFFFFF</div>
+        </div>
+        <div class="color-card" style="background-color: #F5F5F5; border: 1px solid #eee;">
+            <div class="color-name dark-text">白烟</div>
+            <div class="color-value dark-text">WhiteSmoke #F5F5F5</div>
+        </div>
+        <div class="color-card" style="background-color: #FFFAFA; border: 1px solid #eee;">
+            <div class="color-name dark-text">雪白</div>
+            <div class="color-value dark-text">Snow #FFFAFA</div>
+        </div>
+        <div class="color-card" style="background-color: #F8F8FF; border: 1px solid #eee;">
+            <div class="color-name dark-text">幽灵白</div>
+            <div class="color-value dark-text">GhostWhite #F8F8FF</div>
+        </div>
+        <div class="color-card" style="background-color: #F0FFF0; border: 1px solid #eee;">
+            <div class="color-name dark-text">蜜露白</div>
+            <div class="color-value dark-text">Honeydew #F0FFF0</div>
+        </div>
+        <div class="color-card" style="background-color: #FFF5EE; border: 1px solid #eee;">
+            <div class="color-name dark-text">贝壳白</div>
+            <div class="color-value dark-text">Seashell #FFF5EE</div>
+        </div>
+        <div class="color-card" style="background-color: #FDF5E6; border: 1px solid #eee;">
+            <div class="color-name dark-text">亚麻白</div>
+            <div class="color-value dark-text">Linen #FDF5E6</div>
+        </div>
+        <div class="color-card" style="background-color: #FAF0E6; border: 1px solid #eee;">
+            <div class="color-name dark-text">亚麻白</div>
+            <div class="color-value dark-text">Linen #FAF0E6</div>
+        </div>
+        <div class="color-card" style="background-color: #FAEBD7; border: 1px solid #eee;">
+            <div class="color-name dark-text">古董白</div>
+            <div class="color-value dark-text">AntiqueWhite #FAEBD7</div>
+        </div>
+        <div class="color-card" style="background-color: #FFEFD5; border: 1px solid #eee;">
+            <div class="color-name dark-text">木瓜白</div>
+            <div class="color-value dark-text">PapayaWhip #FFEFD5</div>
+        </div>
+        <div class="color-card" style="background-color: #FFEBCD; border: 1px solid #eee;">
+            <div class="color-name dark-text">杏仁白</div>
+            <div class="color-value dark-text">BlanchedAlmond #FFEBCD</div>
+        </div>
+        <div class="color-card" style="background-color: #FFE4C4; border: 1px solid #eee;">
+            <div class="color-name dark-text">米白</div>
+            <div class="color-value dark-text">Bisque #FFE4C4</div>
+        </div>
+        <div class="color-card" style="background-color: #FFF8DC; border: 1px solid #eee;">
+            <div class="color-name dark-text">玉米白</div>
+            <div class="color-value dark-text">Cornsilk #FFF8DC</div>
+        </div>
+        <div class="color-card" style="background-color: #FFFFF0; border: 1px solid #eee;">
+            <div class="color-name dark-text">象牙白</div>
+            <div class="color-value dark-text">Ivory #FFFFF0</div>
+        </div>
+        <div class="color-card" style="background-color: #F0F8FF; border: 1px solid #eee;">
+            <div class="color-name dark-text">爱丽丝蓝白</div>
+            <div class="color-value dark-text">AliceBlue #F0F8FF</div>
+        </div>
+    </div>
+</div>
+
+    <!-- 黑色系 (15种) -->
+<div class="color-section">
+    <h2>黑色系 (15种)</h2>
+    <div class="color-grid">
+        <div class="color-card" style="background-color: #000000;">
+            <div class="color-name light-text">纯黑</div>
+            <div class="color-value light-text">Black #000000</div>
+        </div>
+        <div class="color-card" style="background-color: #0D0D0D;">
+            <div class="color-name light-text">暗夜黑</div>
+            <div class="color-value light-text">Night #0D0D0D</div>
+        </div>
+        <div class="color-card" style="background-color: #1A1A1A;">
+            <div class="color-name light-text">黑曜石</div>
+            <div class="color-value light-text">Obsidian #1A1A1A</div>
+        </div>
+        <div class="color-card" style="background-color: #262626;">
+            <div class="color-name light-text">木炭黑</div>
+            <div class="color-value light-text">Charcoal #262626</div>
+        </div>
+        <div class="color-card" style="background-color: #333333;">
+            <div class="color-name light-text">石墨黑</div>
+            <div class="color-value light-text">Graphite #333333</div>
+        </div>
+        <div class="color-card" style="background-color: #404040;">
+            <div class="color-name light-text">钢铁黑</div>
+            <div class="color-value light-text">Steel #404040</div>
+        </div>
+        <div class="color-card" style="background-color: #4D4D4D;">
+            <div class="color-name light-text">灰黑</div>
+            <div class="color-value light-text">GrayBlack #4D4D4D</div>
+        </div>
+        <div class="color-card" style="background-color: #595959;">
+            <div class="color-name light-text">深灰黑</div>
+            <div class="color-value light-text">DarkGray #595959</div>
+        </div>
+        <div class="color-card" style="background-color: #121212;">
+            <div class="color-name light-text">墨黑</div>
+            <div class="color-value light-text">Ink #121212</div>
+        </div>
+        <div class="color-card" style="background-color: #1C1C1C;">
+            <div class="color-name light-text">煤黑</div>
+            <div class="color-value light-text">Coal #1C1C1C</div>
+        </div>
+        <div class="color-card" style="background-color: #212121;">
+            <div class="color-name light-text">沥青黑</div>
+            <div class="color-value light-text">Asphalt #212121</div>
+        </div>
+        <div class="color-card" style="background-color: #2B2B2B;">
+            <div class="color-name light-text">乌鸦黑</div>
+            <div class="color-value light-text">Raven #2B2B2B</div>
+        </div>
+        <div class="color-card" style="background-color: #171717;">
+            <div class="color-name light-text">午夜黑</div>
+            <div class="color-value light-text">Midnight #171717</div>
+        </div>
+        <div class="color-card" style="background-color: #080808;">
+            <div class="color-name light-text">深渊黑</div>
+            <div class="color-value light-text">Abyss #080808</div>
+        </div>
+        <div class="color-card" style="background-color: #050505;">
+            <div class="color-name light-text">黑洞</div>
+            <div class="color-value light-text">BlackHole #050505</div>
+        </div>
+    </div>
+</div>
+<div id="copyright" class="copyright">云天遥ai创意设计工作室 CopyRight 2025-04-10</div>
+	<div id="copyright" class="copyright">
+		<div class="image-container">
+  <img src="weichat.png" alt="微信">
+  <div class="tooltip">
+    <img src="2code.png" alt="扫一扫上面的二维码图案，加我为朋友。
+">
+    <span></span>
+  </div>
+</div></div>
+
+    
+<script>
+        // 复制HEX值到剪贴板
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showNotification();
+            }).catch(err => {
+                console.error('复制失败:', err);
+                // 降级方案
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showNotification();
+            });
+        }
+
+        function showNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show-notification');
+            setTimeout(() => {
+                notification.classList.remove('show-notification');
+            }, 2000);
+        }
+
+        // 为所有颜色卡片添加点击事件
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorCards = document.querySelectorAll('.color-card');
+            colorCards.forEach(card => {
+                const hexValue = card.querySelector('.color-value').textContent.match(/#[0-9A-Fa-f]{6}/)[0];
+                card.addEventListener('click', () => copyToClipboard(hexValue));
+                
+                // 自动设置文字颜色
+                const bgColor = getComputedStyle(card).backgroundColor;
+                const rgb = bgColor.match(/\d+/g);
+                if (rgb && rgb.length === 3) {
+                    const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+                    const textElements = card.querySelectorAll('.color-name, .color-value');
+                    textElements.forEach(el => {
+                        el.classList.toggle('light-text', brightness < 128);
+                        el.classList.toggle('dark-text', brightness >= 128);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

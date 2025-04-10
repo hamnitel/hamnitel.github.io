@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.image-container {
+  position: relative;
+  display: inline-block;
+	align-content: center;
+	text-align: center;
+}
+
+.image-container img {
+  display: block;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  gap: 8px; /* 图片和文本之间的间距 */
+}
+
+.tooltip img {
+  max-width: 100px; /* 设置图片最大宽度 */
+  max-height: 100px; /* 设置图片最大高度 */
+  display: block; /* 移除图片底部的额外间距 */
+}
+
+.image-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -5px);
+}
+</style>
+</head>
+<body>
+<h1>1231231</h1>
+	<h2>1231231</h2>
+<div class="image-container">
+  <img src="weichat.png" alt="主图片">
+  <div class="tooltip">
+    <img src="lgog2.png" alt="提示图标">
+    <span></span>
+  </div>
+</div>
+
+</body>
+</html>
