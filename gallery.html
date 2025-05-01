@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炫酷相册</title>
+    <!-- 引用外部 CSS 文件 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="copy-notification" id="copyNotification">已复制HEX值!</div>
+    <div class="logo"><img src="lgog2.png" width="62" height="58" alt=""/></div>
+
+    <!-- 修改菜单 div 类名 -->
+    <div class="top-menu">
+        <a href="index.html">色彩对照表</a>
+        <a href="gallery.html">AI 相册</a>
+        <a href="#">LoRA 模型</a>
+    </div>
+    <h1>AI 相册</h1>
+    <div class="gallery" id="gallery">
+        <!-- 移除硬编码的图片和标题 -->
+    </div>
+    <!-- 添加分页按钮容器 -->
+    <div class="pagination" id="pagination"></div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div class="modal-title" id="modalTitle">
+            <!-- 假设链接为 https://www.liblib.art/modelinfo/7aff2794f3c341a29fcf4bea6062b55b?from=feed&versionUuid=718af4195dd0407789877d6d58ae27c4&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFNA==，你可以根据实际情况修改 -->
+            <a href="https://www.liblib.art/modelinfo/7aff2794f3c341a29fcf4bea6062b55b?from=feed&versionUuid=718af4195dd0407789877d6d58ae27c4&rankExpId=RVIyX0wyI0VHMTEjRTE3X0wzI0VHNSNFNA==" target="_blank" rel="noopener noreferrer">
+                <!-- 这里会显示标题内容 -->
+            </a>
+        </div>
+        <!-- 添加颜色类 -->
+        <div class="modal-description description-color-1" id="modalDescription"></div>
+        <div class="modal-description2 description-color-2" id="modalDescription2"></div>
+        <div class="modal-description3 description-color-3" id="modalDescription3"></div>
+        <div class="modal-description4 description-color-4" id="modalDescription4"></div>
+    </div>
+    <div id="copyright" class="copyright">云天遥ai创意设计工作室 CopyRight 2025-04-10</div>
+    <div id="copyright" class="copyright">
+        <div class="image-container">
+            <img src="weichat.png" alt="微信">
+            <div class="tooltip">
+                <img src="2code.png" alt="扫一扫上面的二维码图案，加我为朋友。
+">
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 每页显示的图片数量
+        const itemsPerPage = 10;
+        let currentPage = 1;
+        let allImages = [];
+
+        // 初始化模态框
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('img01');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription'); 
+        const modalDescription2 = document.getElementById('modalDescription2');
+        const modalDescription3 = document.getElementById('modalDescription3');
+        const modalDescription4 = document.getElementById('modalDescription4');
+        const span = document.getElementsByClassName("close")[0];
+
+        // 点击图片时显示模态框
+        function showImage(src, title, description, description2, description3, description4) {
+            modal.style.display = "block";
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 50);
+            modalImg.src = src;
+            const modalTitleLink = document.querySelector('#modalTitle a');
+            modalTitleLink.textContent = title;
+            modalDescription.textContent = description; 
+            modalDescription2.textContent = description2; 
+            modalDescription3.textContent = description3; 
+            modalDescription4.textContent = description4; 
+        }
+
+        // 点击关闭按钮时隐藏模态框
+        function hideModal() {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300); 
+        }
+
+        span.onclick = hideModal;
+
+        // 点击模态框外部时隐藏模态框
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                hideModal();
+            }
+        }
+
+        // 从 XML 数据库加载图片和标题
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'gallery.xml', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    try {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
+                        const images = xmlDoc.getElementsByTagName('image');
+                        allImages = Array.from(images).map(img => {
+                            const imgSrc = img.getElementsByTagName('src')[0].childNodes[0].nodeValue;
+                            const imgTitle = img.getElementsByTagName('title')[0].childNodes[0].nodeValue;
+                            const imgDescription = img.getElementsByTagName('description')[0].childNodes[0].nodeValue; 
+                            const imgDescription2 = img.getElementsByTagName('description2')[0]?.childNodes[0]?.nodeValue || '';
+                            const imgDescription3 = img.getElementsByTagName('description3')[0]?.childNodes[0]?.nodeValue || '';
+                            const imgDescription4 = img.getElementsByTagName('description4')[0]?.childNodes[0]?.nodeValue || '';
+                            return { 
+                                src: imgSrc, 
+                                title: imgTitle, 
+                                description: imgDescription,
+                                description2: imgDescription2,
+                                description3: imgDescription3,
+                                description4: imgDescription4
+                            };
+                        });
+
+                        showPage(currentPage);
+                        setupPagination();
+                    } catch (error) {
+                        console.error('解析 XML 文件时出错:', error);
+                    }
+                } else {
+                    console.error(`加载 gallery.xml 失败，状态码: ${xhr.status}`);
+                }
+            }
+        };
+        xhr.send();
+
+        function showPage(page) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageImages = allImages.slice(startIndex, endIndex);
+
+            // 添加调试信息
+            console.log(`当前页面应显示 ${pageImages.length} 张图片，从索引 ${startIndex} 到 ${endIndex}`);
+
+            pageImages.forEach(img => {
+                const imageCard = document.createElement('div');
+                imageCard.className = 'image-card';
+
+                const imgElement = document.createElement('img');
+                imgElement.src = img.src;
+                imgElement.onerror = function() {
+                    // 添加占位图
+                    this.src = 'placeholder.png'; 
+                    console.error(`图片加载失败: ${img.src}`);
+                };
+                imgElement.onclick = function() { 
+                    showImage(img.src, img.title, img.description, img.description2, img.description3, img.description4); 
+                }; 
+
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'image-title';
+                titleDiv.textContent = img.title;
+
+                imageCard.appendChild(imgElement);
+                imageCard.appendChild(titleDiv);
+                gallery.appendChild(imageCard);
+            });
+        }
+
+        function setupPagination() {
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            const pageCount = Math.ceil(allImages.length / itemsPerPage);
+
+            for (let i = 1; i <= pageCount; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.addEventListener('click', () => {
+                    // 移除所有按钮的高亮样式
+                    const buttons = pagination.getElementsByTagName('button');
+                    for (let j = 0; j < buttons.length; j++) {
+                        buttons[j].style.backgroundColor = '#333';
+                    }
+                    // 为当前点击的按钮添加高亮样式
+                    button.style.backgroundColor = '#ff9900';
+                    currentPage = i;
+                    showPage(currentPage);
+                });
+
+                // 初始时不高亮任何按钮
+                button.style.backgroundColor = '#333';
+
+                pagination.appendChild(button);
+            }
+        }
+    </script>
+</body>
+</html>

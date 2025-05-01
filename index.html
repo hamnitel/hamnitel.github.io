@@ -4,165 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>颜色中英文参考对照表 (300+种颜色)</title>
+        <!-- 引用外部 CSS 文件 -->
+        <link rel="stylesheet" href="styles.css">
 	<script src="disable-f12.js"></script>
-    <style>
-        body {
-	font-family: 'Microsoft YaHei', Arial, sans-serif;
-	margin-top: 0;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 0;
-	padding: 64px;
-	background-color: #E8E8E8;
-	color: #333;
-	align-content: center;
-        }
-		logo{
-			text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-		}
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-        }
-        h2 {
-            color: #444;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-		.copyright {
-			text-align: center;
-            color: #444;
-            margin-top: 10px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 1.0em;
-        }
-		.logo{
-			text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-		}
-        .color-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 12px;
-            margin-bottom: 30px;
-        }
-        .color-card {
-            border-radius: 6px;
-            padding: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.10);
-            text-align: center;
-            min-height: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        .color-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.14);
-        }
-        .color-name {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .color-value {
-            font-size: 0.85em;
-            opacity: 0.9;
-        }
-        .color-section {
-            margin-bottom: 40px;
-            background: #F0F0F0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .dark-text {
-            color: #333;
-        }
-        .light-text {
-            color: white;
-            text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-        }
-        .copy-notification {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: 1000;
-            pointer-events: none;
-        }
-        .show-notification {
-            opacity: 1;
-        }
-        @media (max-width: 768px) {
-            .color-grid {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            }
-        }
-.image-container {
-  position: relative;
-  display: inline-block;
-	text-align: center;
-}
-
-.image-container img {
-  display: block;
-  text-align: center;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  color: black;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 14px;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
-  margin-bottom: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  display: flex; /* 使用 flexbox 布局 */
-  align-items: center; /* 垂直居中 */
-  gap: 8px; /* 图片和文本之间的间距 */
-}
-
-.tooltip img {
-  max-width: 160px; /* 设置图片最大宽度 */
-  max-height: 180px; /* 设置图片最大高度 */
-  display: block; /* 移除图片底部的额外间距 */
-}
-
-.image-container:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(-50%, -5px);
-}
-    </style>
 </head>
 <body>
         <div class="copy-notification" id="copyNotification">已复制HEX值!</div>
-    <div class="logo"><img src="lgog2.png" width="125" height="116" alt=""/></div>
+    <div class="logo"><img src="lgog2.png" width="62" height="58" alt=""/></div>
+        <!-- 修改菜单 div 类名 -->
+        <div class="top-menu">
+            <a href="index.html">色彩对照表</a>
+            <a href="gallery.html">AI 相册</a>
+            <a href="#">LoRA 模型</a>
+        </div>
 <h1>颜色中英文参考对照表 (300+种颜色)</h1>
      <!-- 特殊色系 (30种) -->
 <div class="color-section">
